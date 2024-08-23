@@ -329,5 +329,32 @@
         </div>
       </footer>
       
+      <div id="loading-screen">
+
+        <h1 class="load">MIND<span>EASE</span></h1>
+    </div>
+
+    <script>
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Delay for showing the main content after loading screen
+    setTimeout(() => {
+        const loadingScreen = document.getElementById('loading-screen');
+        const mainContent = document.getElementById('main-content');
+
+        // Hide the loading screen with transition
+        loadingScreen.style.opacity = '0';
+
+        // Show the main content
+        mainContent.style.display = 'block';
+
+        // Remove the loading screen from the DOM after the transition
+        setTimeout(() => {
+            loadingScreen.style.display = 'none';
+        }, 500); // Matches the transition duration
+    }, 2000); // Adjust delay as needed
+});
+</script>
 </body>
 </html>
