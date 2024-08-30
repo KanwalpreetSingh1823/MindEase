@@ -12,6 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=DM+Serif+Text:ital@0;1&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@1,100..900&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="script.js">
     
     <title> MentalEase | Mental Health Website </title>
 </head>
@@ -329,32 +330,6 @@
         </div>
       </footer>
       
-      <div id="loading-screen">
 
-        <h1 class="load">MIND<span>EASE</span></h1>
-    </div>
-
-    <script>
-
-
-document.addEventListener('DOMContentLoaded', () => {
-    // Delay for showing the main content after loading screen
-    setTimeout(() => {
-        const loadingScreen = document.getElementById('loading-screen');
-        const mainContent = document.getElementById('main-content');
-
-        // Hide the loading screen with transition
-        loadingScreen.style.opacity = '0';
-
-        // Show the main content
-        mainContent.style.display = 'block';
-
-        // Remove the loading screen from the DOM after the transition
-        setTimeout(() => {
-            loadingScreen.style.display = 'none';
-        }, 500); // Matches the transition duration
-    }, 2000); // Adjust delay as needed
-});
-</script>
 </body>
 </html>
