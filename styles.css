@@ -13,6 +13,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+.main-content{
+  display: none;
+}
 .secton_container{
     max-width:var(--max-width);
     margin: auto;
@@ -633,10 +636,95 @@ ul {
     color: var(--white);
     cursor: pointer;
   }
+  .loading{
+    color:green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30vh;
+    font-size:5rem;
+      font-family: "Baskervville SC", serif;
+      font-weight: 400;
+      font-style: normal;
+      
+    animation-name: mainLoad;
+    animation-timing-function:ease-in-out;
+    animation-duration: 2s;
+    /* animation-iteration-count: initial; */
+  }
+
+  /* .progress{
+    border:1px solid red;
+    padding: 0.5rem;
+    width:20rem;
+    animation-name: progressBar;
+    animation-timing-function:ease-in-out;
+    animation-timing-function: 2s;
+  }
+  @keyframes  progressBar{
+    0%{
+      background-color:white;
+    }
+    100%{
+      background-color:red;
+    }
+  } */
+  .container {
+    margin: 100px auto;
+    width: 500px;
+    text-align: center;
+  }
+  .progress2 {
+    padding: 6px;
+    border-radius: 30px;
+    /* background: rgba(0, 0, 0, 0.25);  
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08); */
+  }
   
+  .progress-bar2 {
+    height: 18px;
+    border-radius: 30px;
+    /* background-image: 
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    transition: 0.4s linear;  
+    transition-property: width, background-color;     */
+  }
+  
+  .progress-moved .progress-bar2 {
+    width: 100%;
+    background-color: green;  
+    animation: progressAnimation 6s;
+  }
+  
+  @keyframes progressAnimation {
+    0%   { width: 0%; background-color: rgb(175, 238, 175);}
+    100% { width: 100%; background-color: rgb(41, 173, 41); }
+  }
+  .mind{
+      opacity: 0.7;
+      margin-right: 20px;
+  }
+  .ease{
+    transform: translateX(100%);
+    color:orange;
+      opacity: 0.7;
+  }
+  @keyframes mainLoad {
+    0%{
+      opacity: 0;
+    }
+
+    100%{
+      opacity: 1;
+    }
+  }
   /*-------------Responsiveness----------------*/
 
   @media (width < 900px) {
+    body{
+      width:fit-content;
+    }
     header{
       height:1000px;
     }
@@ -700,6 +788,9 @@ ul {
   }
   
   @media (width < 780px) {
+    body{
+      width:fit-content;
+    }
     .nav__links {
       display: none;
     }
@@ -710,6 +801,9 @@ ul {
   }
   
   @media (width < 600px) {
+    body{
+      width:fit-content;
+    }
     header{
       height:1000px;
     }
@@ -741,13 +835,20 @@ ul {
     }
   }
 
-  @media (max-width : 375px){
+  @media (max-width  : 375px){
     body{
       width:fit-content;
+    }
+    .loading{
+      margin-top: 100vh;
     }
   }
   @media (max-width:425px){
     header{
       height:1100px;
     }
+    .loading{
+      margin-top: 50vh;
+    }
   }
+
