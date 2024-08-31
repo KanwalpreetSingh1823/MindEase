@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+}
+
+body {
+    background-color: #bef7eb;
+}
+
+.container {
+    background-color: #bef7eb;
+}
+
+.navbar {
+    background-color: #12ac8e;
+    width: 100vw;
+    margin-top: 0;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+.navbar {
+    background-color: #12ac8e; /* Adjust color as needed */
+}
+
+.navbar-toggler-icon {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.nav-link {
+    color:#fb923c !important;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #96c8fa !important;
+}
+
+/* Adjustments for mobile view */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+}
+
+.navbar nav {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.problem-list {
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.problem-list .link a {
+    padding: 0.5rem;
+    color: var(--primary-color-light);
+    display: block;
+    text-decoration: none;
+}
+
+.problem-list .link a:hover {
+    color: var(--white);
+    background-color: #96c8fa;
+    border-radius: 10px;
+    transition-delay: 0.2s;
+}
+
+.problem-list li a {
+    margin-left: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    background-color: #fb923c;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: block;
+    padding: 5px;
+}
+
+#logo {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#logo span {
+    color: #fb923c;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(18, 172, 142, 0.6));
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.hero-section #intro {
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+    background-color: rgba(235, 234, 234, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.hero-section #intro h1 {
+    font-weight: bold;
+    font-size: 4rem;
+    color: #fb923c;
+    text-align: center;
+}
+
+.hero-section #intro p {
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+}
+
+marquee {
+    background: linear-gradient(135deg, rgba(18, 172, 142, 0.6), rgba(255, 255, 255, 0.8));
+    padding: 20px;
+}
+
+.images {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    overflow-x: auto; /* Allows horizontal scrolling on smaller screens */
+}
+
+.images .image img {
+    width: 18rem;
+    height: 15rem;
+    border-radius: 5px;
+}
+.test {
+    display: flex; /* Flexbox to center content vertically and horizontally */
+    flex-direction: column; /* Ensures content stacks vertically */
+    align-items: center; /* Centers content horizontally */
+    justify-content: center; /* Centers content vertically */
+    padding: 2rem; /* Adds padding inside the box */
+    box-shadow: 5px 10px 18px #888888; /* Adds a shadow effect around the box */
+    flex: 1 1 30%; /* Allows boxes to grow/shrink and sets base width */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    text-align: center; /* Centers text inside the box */
+    border-radius: 10px; /* Rounds the corners of the box */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for hover effects */
+    background-color: rgba(18, 172, 142, 0.6); /* Semi-transparent teal background color */
+}
+
+/* Hover effect to slightly scale up the box and darken the shadow */
+.test:hover {
+    transform: scale(1.05); /* Scales up the box slightly on hover */
+    box-shadow: 8px 15px 20px #666666; /* Darkens the shadow on hover */
+}
+
+.test li strong{
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+.test li{
+    margin-bottom: 3rem;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#all-types-test {
+    background: linear-gradient(360deg, rgba(255, 255, 255, 0.8), #fb923c);
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 3rem;
+}
+
+#interactive-test {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(18, 172, 142, 0.6));
+    padding: 20px;
+}
+
+#interactive-test h2 {
+    text-align: center;
+    padding: 3rem;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+#interactive-test form {
+    border: 1px solid rgb(0, 132, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    margin: 0 2rem;
+    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(18, 172, 142, 0.6), rgba(255, 255, 255, 0.8));
+}
+
+#interactive-test form label {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#interactive-test form select {
+    font-size: 1.5rem;
+    padding: 0.7rem;
+    border-radius: 10px;
+}
+
+#submit-btn {
+    border: none;
+    padding: 1rem;
+    width: 10rem;
+    background-color: #fb923c;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+#submit-btn:hover {
+    background-color: #96c8fa;
+    color: black;
+}
+
+#resources {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(18, 172, 142, 0.6));
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#resources h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.videos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.videos iframe {
+    width: 100%;
+    max-width: 560px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .videos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .videos iframe {
+        max-width: 100%;
+    }
+}
+
+.footer {
+    background: #000;
+    padding: 30px 0;
+    color: gray;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+}
+
+.footer .row {
+    width: 100%;
+    margin: 1% 0;
+    padding: 0.6% 0;
+    gap: 10px;
+    display: inline;
+}
+
+.footer .row a {
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
+}
+
+.footer .row a:hover {
+    color: #fff;
+}
+
+.footer .row ul {
+    width: 100%;
+}
+
+.footer .row ul li {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.footer .row a i {
+    font-size: 2em;
+    margin: 0 1%;
+}
+
+@media (max-width: 720px) {
+    .footer {
+        text-align: left;
+        padding: 5%;
+    }
+
+    .footer .row ul li {
+        display: block;
+        margin: 10px 0;
+        text-align: left;
+    }
+
+    .footer .row a i {
+        margin: 0 3%;
+    }
+}
+
+#contact-support h2 {
+    text-align: center;
+    padding: 3rem;
+    padding-bottom: 1.2rem;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+#contact-support p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
