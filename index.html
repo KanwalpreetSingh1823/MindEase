@@ -1,304 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width=, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width=, initial-scale=1.0" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=DM+Serif+Text:ital@0;1&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@1,100..900&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <title> MentalEase | Mental Health Website </title>
-</head>
-<body>
-  <div class="loading">
-    <h1><span class="mind">Mind</span><span class="ease">Ease</span>
-    </h1>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=DM+Serif+Text:ital@0;1&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@1,100..900&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>MentalEase | Mental Health Website</title>
+  </head>
+  <body>
+    <div class="loading animation-load">
+      <h1><span class="mind">Mind</span><span class="ease">Ease</span></h1>
 
-    <div class="container">    
-      <div class="progress2 progress-moved">
-        <div class="progress-bar2" >
-        </div>                       
-      </div> 
-    </div>
+      <div id="load" class="container loader">
+        <div class="progress2 progress-moved">
+          <div id="progress" class="progress-bar2"></div>
+        </div>
+      </div>
     </div>
     <main class="main-content">
       <header>
         <nav class="section__container nav__container">
           <div class="nav__logo">Mind<span>Ease</span></div>
-             <ul class="nav__links">
-                <li class="link"> <a href="#">Home</a></li>
-                <li class="link"> <a href="#">About Us</a></li>
-                <li class="link"> <a href="#">Services</a>
-                  <ul class="dropdown">
-                    <li><a href="#">Puzzles</a></li>
-                    <li><a href="#">Songs</a></li>
-                    <li><a href="#">Therapy</a></li>
-                    <li><a href="#">Doctor Advice</a></li>
-                </ul></li>
-                <li class="link"> <a href="#">Pages</a></li>
-                <li class="link"> <a href="#">Blog</a></li>
-             </ul>
-             <button class="btn1">Contact Us</button>
+          <ul class="nav__links">
+            <li class="link"><a href="#">Home</a></li>
+            <li class="link"><a href="#">About Us</a></li>
+            <li class="link">
+              <a href="#">Services</a>
+              <ul class="dropdown">
+                <li><a href="#">Puzzles</a></li>
+                <li><a href="#">Songs</a></li>
+                <li><a href="#">Therapy</a></li>
+                <li><a href="#">Doctor Advice</a></li>
+              </ul>
+            </li>
+            <li class="link"><a href="#">Pages</a></li>
+            <li class="link"><a href="#">Blog</a></li>
+          </ul>
+          <button class="btn1">Contact Us</button>
         </nav>
         <div class="forms">
           <div class="section__container header__container">
             <div class="header__content">
-                <h1 id="main-head" class ="text1" >Welcome to a Place of Healing and Growth</h1>
-                <p class="text1">"Every Step You Take Brings You Closer to Healing"
-                  "You’re Not Alone—We’re Here to Help"
-                  "Your Mental Health Matters—Take the First Step Today"
-                  "Find Strength and Resilience in Every Moment"
-                  "Healing is a Journey—Let Us Walk It with You"
-                </p>
-                <button class="btn_service">See Services</button>
-        </div>
-        <div class="header__form">
-          <form>
-            <h4>Book Now</h4>
-            <input type="text" placeholder="First Name" />
-            <input type="text" placeholder="Last Name" />
-            <input type="text" placeholder="Address" />
-            <input type="text" placeholder="Phone No." />
-            <button class="btn form__btn">Book Appointment</button>
-          </form>
+              <h1 id="main-head" class="text1">
+                Welcome to a Place of Healing and Growth
+              </h1>
+              <p class="text1">
+                "Every Step You Take Brings You Closer to Healing" "You’re Not
+                Alone—We’re Here to Help" "Your Mental Health Matters—Take the
+                First Step Today" "Find Strength and Resilience in Every Moment"
+                "Healing is a Journey—Let Us Walk It with You"
+              </p>
+              <button class="btn_service">See Services</button>
             </div>
+            <div class="header__form">
+              <form>
+                <h4>Book Now</h4>
+                <input type="text" placeholder="First Name" />
+                <input type="text" placeholder="Last Name" />
+                <input type="text" placeholder="Address" />
+                <input type="text" placeholder="Phone No." />
+                <button class="btn form__btn">Book Appointment</button>
+              </form>
+            </div>
+          </div>
         </div>
+      </header>
+      <section class="section__container service__container" id="service">
+        <div class="forms1">
+          <div class="service__header">
+            <div class="service__header__content">
+              <h2 class="section__header2">Our Special service</h2>
+            </div>
+            <button class="service__btn">Ask A Service</button>
+          </div>
         </div>
-    </header>
-    <section class="section__container service__container" id="service">
-       <div class="forms1"> <div class="service__header">
-          
-        <div class="service__header__content">
-          <h2 class="section__header2">Our Special service</h2>
-         
-        </div>
-        <button class="service__btn">Ask A Service</button>
-      </div></div>
 
-    <div class="container3">
-
-        <div class="service__grid">
-          <div class="service__card">
-            <span><i class="ri-brain-line"></i></span>
-            <h4>Psychology Test</h4>
-            <p >
-             
-            A psychology test is an assessment tool used
-            to measure various aspects of an individual’s 
-            mental state, cognitive abilities, personality traits,
-            or psychological functioning
-            </p>
-            <a href="Psychological.html">Learn More</a>
-          </div>
-          <div class="service__card">
-            <span><i class="ri-mental-health-line"></i></span>
-            <h4> Physical Health Problems</h4>
-            <p>
-              Chronic fatigue or sleep disturbances
-              Unexplained physical symptoms (e.g., headaches, stomach issues)
-              Poor self-care or neglect of physical health
-            </p>
-            <a href="#">Learn More</a>
-          </div>
-          <div class="service__card">
-            <span><i class="ri-emotion-sad-line"></i></span>
-            <h4>Mood Disorders</h4>
-            <p>
-              Persistent sadness or depressive symptoms
-              Extreme mood swings and manic episodes
-              Loss of interest in activities and social withdrawal
-              Difficulty managing emotions and mood stability
-            </p>
-            <a href="#">Learn More</a>
-          </div>
-          <div class="service__card">
-            <span><i class="ri-community-line"></i>
-            </i></span>
-            <h4> Social Problems</h4>
-            <p>
-              Difficulty forming or maintaining relationships
-              Social anxiety or avoidance
-              Conflict with family or friends
-            </p>
-            <a href="#">Learn More</a>
-          </div>
-          <div class="service__card">
-            <span><i class="ri-emotion-line"></i></i></span>
-            <h4>Emotional Problems</h4>
-            <p>
-              Persistent sadness, anxiety, or mood swings
-              Feelings of hopelessness or helplessness
-              Emotional numbness or detachment
-            </p>
-            <a href="#">Learn More</a>
-          </div>
-          <div class="service__card">
-            <span><i class="ri-book-line"></i></i></span>
-            <h4> Academic Problems</h4>
-            <p>
-              Difficulty concentrating or studying
-              Poor academic performance or grades
-              Absenteeism or school avoidance
-            </p>
-            <a href="#">Learn More</a>
+        <div class="container3">
+          <div class="service__grid">
+            <div class="service__card">
+              <span><i class="ri-brain-line"></i></span>
+              <h4>Psychology Test</h4>
+              <p>
+                A psychology test is an assessment tool used to measure various
+                aspects of an individual’s mental state, cognitive abilities,
+                personality traits, or psychological functioning
+              </p>
+              <a href="Psychological.html">Learn More</a>
+            </div>
+            <div class="service__card">
+              <span><i class="ri-mental-health-line"></i></span>
+              <h4>Physical Health Problems</h4>
+              <p>
+                Chronic fatigue or sleep disturbances Unexplained physical
+                symptoms (e.g., headaches, stomach issues) Poor self-care or
+                neglect of physical health
+              </p>
+              <a href="Physical.html">Learn More</a>
+            </div>
+            <div class="service__card">
+              <span><i class="ri-emotion-sad-line"></i></span>
+              <h4>Mood Disorders</h4>
+              <p>
+                Persistent sadness or depressive symptoms Extreme mood swings
+                and manic episodes Loss of interest in activities and social
+                withdrawal Difficulty managing emotions and mood stability
+              </p>
+              <a href="mood.html">Learn More</a>
+            </div>
+            <div class="service__card">
+              <span><i class="ri-community-line"></i> </span>
+              <h4>Social Problems</h4>
+              <p>
+                Difficulty forming or maintaining relationships Social anxiety
+                or avoidance Conflict with family or friends
+              </p>
+              <a href="socialproblems.html">Learn More</a>
+            </div>
+            <div class="service__card">
+              <span><i class="ri-emotion-line"></i></span>
+              <h4>Emotional Problems</h4>
+              <p>
+                Persistent sadness, anxiety, or mood swings Feelings of
+                hopelessness or helplessness Emotional numbness or detachment
+              </p>
+              <a href="emotional.html">Learn More</a>
+            </div>
+            <div class="service__card">
+              <span><i class="ri-book-line"></i></span>
+              <h4>Academic Problems</h4>
+              <p>
+                Difficulty concentrating or studying Poor academic performance
+                or grades Absenteeism or school avoidance
+              </p>
+              <a href="academic.html">Learn More</a>
+            </div>
           </div>
         </div>
-      </div>
       </section>
       <section class="section__container about__container" id="about">
         <div class="about__content">
           <h2 class="container4">About Us</h2>
-          <p class = "container1">
+          <p class="container1">
             Welcome to our healthcare website, your one-stop destination for
             reliable and comprehensive health care information. We are committed
-            to promoting wellness and providing valuable resources to empower you
-            on your health journey.
-         
-            Explore our extensive collection of expertly written articles and
-            guides covering a wide range of health topics. From understanding
-            common medical conditions to tips for maintaining a healthy lifestyle,
-            our content is designed to educate, inspire, and support you in making
-            informed choices for your health.
-          
+            to promoting wellness and providing valuable resources to empower
+            you on your health journey. Explore our extensive collection of
+            expertly written articles and guides covering a wide range of health
+            topics. From understanding common medical conditions to tips for
+            maintaining a healthy lifestyle, our content is designed to educate,
+            inspire, and support you in making informed choices for your health.
             Discover practical health tips and lifestyle advice to optimize your
-            physical and mental well-being. We believe that small changes can lead
-            to significant improvements in your quality of life, and we're here to
-            guide you on your path to a healthier and happier you.
+            physical and mental well-being. We believe that small changes can
+            lead to significant improvements in your quality of life, and we're
+            here to guide you on your path to a healthier and happier you.
           </p>
         </div>
         <div class="about__image">
           <img src="assets/about.jpg" alt="about" />
         </div>
       </section>
-  
+
       <section class="section__container why__container" id="blog">
         <div class="about__image">
           <img src="assets/choose-us.jpg" alt="why choose us" />
         </div>
         <div class="why__content">
-          <h2 class="container" >Why Choose Us</h2>
+          <h2 class="container">Why Choose Us</h2>
           <p class="container2">
             With a steadfast commitment to your well-being, our team of highly
             trained healthcare professionals ensures that you receive nothing
             short of exceptional patient experiences.
           </p>
           <div class="container2">
+            <div class="why__grid">
+              <span><i class="ri-hand-heart-line"></i></span>
 
-          <div class="why__grid">
+              <div>
+                <h4>Intensive Care</h4>
+                <p>
+                  Our Intensive Care Unit is equipped with advanced technology
+                  and staffed by team of professionals
+                </p>
+              </div>
 
-            <span><i class="ri-hand-heart-line"></i></span>
+              <span><i class="ri-truck-line"></i></span>
 
-            <div>
-              <h4>Intensive Care</h4>
-              <p>
-                Our Intensive Care Unit is equipped with advanced technology and
-                staffed by team of professionals
-              </p>
+              <div>
+                <h4>Free Ambulance Car</h4>
+                <p>
+                  A compassionate initiative to prioritize your health and
+                  well-being without any financial burden.
+                </p>
+              </div>
+
+              <span><i class="ri-hospital-line"></i></span>
+
+              <div>
+                <h4>Medical and Surgical</h4>
+                <p>
+                  Our Medical and Surgical services offer advanced healthcare
+                  solutions to address medical needs.
+                </p>
+              </div>
             </div>
-
-            <span><i class="ri-truck-line"></i></span>
-
-            <div>
-              <h4>Free Ambulance Car</h4>
-              <p>
-                A compassionate initiative to prioritize your health and
-                well-being without any financial burden.
-              </p>
-            </div>
-
-            <span><i class="ri-hospital-line"></i></span>
-
-            <div>
-              <h4>Medical and Surgical</h4>
-              <p>
-                Our Medical and Surgical services offer advanced healthcare
-                solutions to address medical needs.
-              </p>
-            </div>
-
-
           </div>
         </div>
-        </div>
       </section>
-  
+
       <section class="section__container doctors__container" id="pages">
         <div class="doctors__header">
           <div class="doctors__header__content">
             <h2 class="container4">Our Special Doctors</h2>
             <p class="container1">
-              We take pride in our exceptional team of doctors, each a specialist
-              in their respective fields.
+              We take pride in our exceptional team of doctors, each a
+              specialist in their respective fields.
             </p>
           </div>
 
-           
           <div class="doctors__nav">
             <span><i class="ri-arrow-left-line"></i></span>
             <span><i class="ri-arrow-right-line"></i></span>
           </div>
         </div>
         <div class="container5">
-        <div class="doctors__grid">
-          <div class="doctors__card">
-            <div class="doctors__card__image">
-              <img src="assets/doctor-1.jpg" alt="doctor" />
-              <div class="doctors__socials">
-                <span><i class="ri-instagram-line"></i></span>
-                <span><i class="ri-facebook-fill"></i></span>
-                <span><i class="ri-heart-fill"></i></span>
-                <span><i class="ri-twitter-fill"></i></span>
+          <div class="doctors__grid">
+            <div class="doctors__card">
+              <div class="doctors__card__image">
+                <img src="assets/doctor-1.jpg" alt="doctor" />
+                <div class="doctors__socials">
+                  <span><i class="ri-instagram-line"></i></span>
+                  <span><i class="ri-facebook-fill"></i></span>
+                  <span><i class="ri-heart-fill"></i></span>
+                  <span><i class="ri-twitter-fill"></i></span>
+                </div>
               </div>
+              <h4>Dr. Emily Smith</h4>
+              <p>Cardiologist</p>
             </div>
-            <h4>Dr. Emily Smith</h4>
-            <p>Cardiologist</p>
-          </div>
-          <div class="doctors__card">
-            <div class="doctors__card__image">
-              <img src="assets/doctor-2.jpg" alt="doctor" />
-              <div class="doctors__socials">
-                <span><i class="ri-instagram-line"></i></span>
-                <span><i class="ri-facebook-fill"></i></span>
-                <span><i class="ri-heart-fill"></i></span>
-                <span><i class="ri-twitter-fill"></i></span>
+            <div class="doctors__card">
+              <div class="doctors__card__image">
+                <img src="assets/doctor-2.jpg" alt="doctor" />
+                <div class="doctors__socials">
+                  <span><i class="ri-instagram-line"></i></span>
+                  <span><i class="ri-facebook-fill"></i></span>
+                  <span><i class="ri-heart-fill"></i></span>
+                  <span><i class="ri-twitter-fill"></i></span>
+                </div>
               </div>
+              <h4>Dr. James Anderson</h4>
+              <p>Neurosurgeon</p>
             </div>
-            <h4>Dr. James Anderson</h4>
-            <p>Neurosurgeon</p>
-          </div>
-          <div class="doctors__card">
-            <div class="doctors__card__image">
-              <img src="assets/doctor-3.jpg" alt="doctor" />
-              <div class="doctors__socials">
-                <span><i class="ri-instagram-line"></i></span>
-                <span><i class="ri-facebook-fill"></i></span>
-                <span><i class="ri-heart-fill"></i></span>
-                <span><i class="ri-twitter-fill"></i></span>
+            <div class="doctors__card">
+              <div class="doctors__card__image">
+                <img src="assets/doctor-3.jpg" alt="doctor" />
+                <div class="doctors__socials">
+                  <span><i class="ri-instagram-line"></i></span>
+                  <span><i class="ri-facebook-fill"></i></span>
+                  <span><i class="ri-heart-fill"></i></span>
+                  <span><i class="ri-twitter-fill"></i></span>
+                </div>
               </div>
+              <h4>Dr. Michael Lee</h4>
+              <p>Dermatologist</p>
             </div>
-            <h4>Dr. Michael Lee</h4>
-            <p>Dermatologist</p>
           </div>
         </div>
-      </div>
       </section>
-  
+
       <footer class="footer">
         <div class="section__container footer__container">
           <div class="footer__col">
             <h3>Health<span>Care</span></h3>
             <p>
-              We are honored to be a part of your healthcare journey and committed
-              to delivering compassionate, personalized, and top-notch care every
-              step of the way.
+              We are honored to be a part of your healthcare journey and
+              committed to delivering compassionate, personalized, and top-notch
+              care every step of the way.
             </p>
             <p>
               Trust us with your health, and let us work together to achieve the
@@ -324,7 +319,8 @@
           <div class="footer__col">
             <h4>Contact Us</h4>
             <p>
-              <i class="ri-map-pin-2-fill"></i> 123, London Bridge Street, London
+              <i class="ri-map-pin-2-fill"></i> 123, London Bridge Street,
+              London
             </p>
             <p><i class="ri-mail-fill"></i> support@care.com</p>
             <p><i class="ri-phone-fill"></i> (+012) 3456 789</p>
@@ -343,6 +339,6 @@
         </div>
       </footer>
     </main>
-      <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
