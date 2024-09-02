@@ -28,7 +28,7 @@
             </form>
         </div>
         <div class="form-container sign-in">
-            <form onsubmit="event.preventDefault()">
+            <form onsubmit="event.preventDefault()" id="form">
                 <h1>Sign In</h1>
                 <div class="social-icons">
                     <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
@@ -37,11 +37,14 @@
                     <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
                 <span>or use your email password</span>
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
+                <div id="inputData">
+                    <input type="email" id="Email" placeholder="Email">
+                    <p id="emailError" class="error"></p>
+                    <input type="password" id="password" placeholder="Password">
+                    <p id="pwdError" class="error"></p>
+                </div>
                 <a href="#">Forget Your Password?</a>
-                <button><a href="index.html">Sign In</a></button>
-                <!-- <a href="index.html"><button>Sign In</button></a> -->
+                <button>Sign In</button>
             </form>
         </div>
         <div class="toggle-container">

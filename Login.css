@@ -8,8 +8,12 @@
 }
 
 body{
-    background-color: #c9ffdf;
-    background: linear-gradient(to right, #e4e1e1, #e8fdf2);
+    /* background-color: #c9ffdf; */
+    background: url("./assets/Login.jpg");
+    /* background: linear-gradient(to right, #e4e1e1, #e8fdf2); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -213,3 +217,28 @@ body{
 .container.active .toggle-right{
     transform: translateX(200%);
 }
+
+#emailError, #pwdError, #userError{
+    color:red;
+    margin:0;
+    padding: 0;
+    display: none;
+    font-size: 0.7rem;
+    text-align: right;
+    margin-left : 2.5rem;
+}
+/* input{
+    width:10rem;
+}
+#inputData{
+    gap:0;
+    border:2px soild red;
+    padding: 0;
+}
+#forgotPassword{
+    text-align: center;
+} */
+
+/* label{
+    border:2px soild red;
+} */
