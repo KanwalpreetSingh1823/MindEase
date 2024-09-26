@@ -342,6 +342,21 @@ ul {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
+
+  .left{
+    transform: translateX(-100%);
+    transition : all 1.5s ease-in-out;
+    opacity: 0;
+  }
+  .right{
+    transform: translateX(100%);
+    transition : all 1.5s ease-in-out;
+    opacity: 0;
+  }
+  .scrolled{
+    transform: translateX(0);
+    opacity: 1;
+  }
   
   .service__card {
     padding: 2rem;
