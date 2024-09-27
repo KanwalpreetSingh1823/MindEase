@@ -15,20 +15,27 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// document.addEventListener("DOMContentLoaded",()=>{
-//     let head = document.querySelector("#main-head");
-//     let text = head.textContent;
-//     head.innerHTML = "";
-
-//     let i = 0;
-//     function autoType(){
-//         if(i<text.length){
-//             head.innerHTML += text.charAt(i);
-//             i++;
-//         }
-//         if(i<text.length){
-//             setTimeout(autoType,100);
-//         }
-//     }
-//    autoType();
-// })
+document.addEventListener('scroll', ()=>{
+    const allLeftServices = document.querySelectorAll('.left');
+    const allRightServices = document.querySelectorAll('.right');
+    const allCenterServices = document.querySelectorAll('.center');
+    const screenPosition = window.innerHeight;
+    allLeftServices.forEach((val)=>{
+        const divPos = val.getBoundingClientRect().top;
+        if(divPos < screenPosition){
+            val.classList.add('scrolled');
+        }
+    })
+    allRightServices.forEach((val)=>{
+        const divPos = val.getBoundingClientRect().top;
+        if(divPos < screenPosition){
+            val.classList.add('scrolled');
+        }
+    })
+    allCenterServices.forEach((val)=>{
+        const divPos = val.getBoundingClientRect().top;
+        if(divPos < screenPosition){
+            val.classList.add('scrolled');
+        }
+    })
+})

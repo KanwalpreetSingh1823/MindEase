@@ -342,7 +342,24 @@ ul {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
-  
+  .left{
+    transform: translateX(-0.5%);
+    transition : all 2s ease-in-out;
+    opacity: 0;
+  }
+  .right{
+    transform: translateX(0.5%);
+    transition : all 2s ease-in-out;
+    opacity: 0;
+  }
+  .center{
+    transition : all 2s ease-in-out;
+    opacity: 0;
+  }
+  .scrolled{
+    transform: translateX(0);
+    opacity: 1;
+  }
   .service__card {
     padding: 2rem;
     text-align: center;
@@ -784,6 +801,10 @@ ul {
     .nav__links {
       display: none;
     }
+    #why_choose{
+      margin-top:30px;
+      margin-bottom: 30px;;
+    }
   
     .header__container {
       flex-direction: column;
@@ -796,6 +817,9 @@ ul {
     }
     header{
       height:1000px;
+    }
+    #why_choose{
+      margin:30px;
     }
     .service__header {
       flex-direction: column;
@@ -830,7 +854,10 @@ ul {
       /* margin-left: 3rem; */
       width:15px;
       height:5px;
-    } 
+    }
+    .container{
+      margin:50px;
+    }
   } 
   @media (width:1024px){
     .animation-load h1{
@@ -852,7 +879,7 @@ ul {
       margin-left: 7rem;
       width:15px;
       height:4px;
-    } 
+    }
   } 
   @media (width:425px){
     .animation-load h1{
