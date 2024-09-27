@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('scroll', ()=>{
     const allLeftServices = document.querySelectorAll('.left');
     const allRightServices = document.querySelectorAll('.right');
+    const allCenterServices = document.querySelectorAll('.center');
     const screenPosition = window.innerHeight;
     allLeftServices.forEach((val)=>{
         const divPos = val.getBoundingClientRect().top;
@@ -26,6 +27,12 @@ document.addEventListener('scroll', ()=>{
         }
     })
     allRightServices.forEach((val)=>{
+        const divPos = val.getBoundingClientRect().top;
+        if(divPos < screenPosition){
+            val.classList.add('scrolled');
+        }
+    })
+    allCenterServices.forEach((val)=>{
         const divPos = val.getBoundingClientRect().top;
         if(divPos < screenPosition){
             val.classList.add('scrolled');
