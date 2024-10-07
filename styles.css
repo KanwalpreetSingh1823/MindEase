@@ -119,6 +119,64 @@ header{
   }
 }
 
+/* Base styles for navigation */
+.nav__links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.link {
+  margin-right: 20px;
+}
+
+.dropdown {
+  display: none;
+}
+
+/* Styling the hamburger toggle button */
+.nav__toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.nav__toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  /* Hide the nav links by default */
+  .nav__links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    border: 50px;
+    width: 100%;
+    background-color: rgba(18, 172, 142, .9);
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Show the hamburger menu */
+  .nav__toggle {
+    display: flex;
+  }
+
+  /* When the toggle is active, show the menu */
+  .nav__links.active {
+    display: flex;
+  }
+}
+
+
 .nav__container{
     padding: 2rem 1rem;
     display: flex;
