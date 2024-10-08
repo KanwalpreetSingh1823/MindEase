@@ -13,6 +13,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+  width:100vw;
+}
 html{
   scroll-behavior: smooth;
 }
@@ -21,10 +24,12 @@ html{
 }
 
 .container {
-  margin: 100px auto;
-  width: 500px;
   text-align: center;
 }
+
+/* .load{
+  width:100vw;
+} */
 
 .load img{
   width:10rem;
@@ -822,10 +827,13 @@ ul {
   } 
 
   @media(max-width:375px){
+    header{
+      height:1100px;
+    }
     .load img{
       width:10rem;
       height:10rem;
-      margin-left: 32vw;
+      margin-left: 30vw;
       margin-top: 30vh;
     }
   }
