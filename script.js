@@ -1,17 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const loadingScreen = document.querySelector(".loading");
+    const loadingScreen = document.querySelector(".load");
     const mainData = document.querySelector(".main-content");
     
     if (loadingScreen) {
         setTimeout(() => {
-            loadingScreen.style.transition = 'opacity 0.5s ease';
             loadingScreen.style.opacity = 0;
 
             setTimeout(() => {
                 loadingScreen.style.display = 'none';
                 mainData.style.display = "block";
             }, 1000);  // Wait for the transition to finish before hiding
-        }, 4000);
+        }, 3000);
     }
 });
 
