@@ -27,6 +27,45 @@ html{
   text-align: center;
 }
 
+/* Base styles for the navigation */
+.nav__links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav__toggle {
+  display: none; /* Hidden on larger screens */
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  /* Hide the navigation links on smaller screens */
+  .nav__links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust depending on your header height */
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* Show the toggle button on smaller screens */
+  .nav__toggle {
+    display: block;
+  }
+
+  /* When active, show the nav links */
+  .nav__links.active {
+    display: flex;
+  }
+}
+
 /* .load{
   width:100vw;
 } */

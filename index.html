@@ -34,8 +34,13 @@
       <header>
         <div class="navBar">
           <nav class="section__container nav__container">
-            <a href="index.html"><div class="nav__logo">Mind<span>Ease</span></div></a>
-            <ul class="nav__links">
+            <a href="index.html">
+              <div class="nav__logo">Mind<span>Ease</span></div>
+            </a>
+            <button class="nav__toggle" id="nav-toggle">
+              <i class="ri-menu-line"></i> <!-- Add RemixIcon or any other icon for the hamburger menu -->
+            </button>
+            <ul class="nav__links" id="nav-links">
               <li class="link"><a href="index.html">Home</a></li>
               <li class="link"><a href="#about-section">About Us</a></li>
               <li class="link">
@@ -61,9 +66,9 @@
                 Welcome to a Place of Healing and Growth
               </h1>
               <p class="text1">
-                "Every Step You Take Brings You Closer to Healing" "You’re Not
-                Alone—We’re Here to Help" "Your Mental Health Matters—Take the
-                First Step Today" "Find Strength and Resilience in Every Moment"
+                "Every Step You Take Brings You Closer to Healing" "You’re Not Alone—We’re Here to Help" 
+                "Your Mental Health Matters—Take the First Step Today" 
+                "Find Strength and Resilience in Every Moment"
                 "Healing is a Journey—Let Us Walk It with You"
               </p>
               <a href="#all-services"><button class="btn_service">See Services</button></a>
@@ -81,6 +86,13 @@
           </div>
         </div>
       </header>
+<script>const toggleButton = document.getElementById('nav-toggle');
+  const navLinks = document.getElementById('nav-links');
+  
+  toggleButton.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+  </script>      
       <section class="section__container service__container" id="service">
         <div class="forms1">
           <div class="service__header" id="all-services">
