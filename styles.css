@@ -130,7 +130,7 @@ header{
   position: relative;
     width: 100%;
     height: 600px; /* Adjust as needed */
-    background-image: url("../assets/header1.jpg");
+    background-image: url("assets/header1.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -143,14 +143,14 @@ header{
           to right,
           rgba(18, 172, 142, .9),
           rgba(18, 172, 142, .7)
-      ), url("../assets/header1.jpg");
+      ), url("assets/header1.jpg");
   }
   100% {
       background-image: linear-gradient(
           to right,
           rgba(18, 172, 142, .9),
           rgba(18, 172, 142, .7)
-      ), url("../assets/header.jpg"); /* Second image */
+      ), url("assets/header.jpg"); /* Second image */
   }
 }
 

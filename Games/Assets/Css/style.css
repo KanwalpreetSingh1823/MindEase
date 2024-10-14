@@ -125,7 +125,6 @@ ul {
 }
 
 .link a{
-  margin-left: 1rem;
     padding: 0.5rem;
     color:var(--primary-color-light);
     font-size: large;
@@ -302,7 +301,7 @@ header ul {
 }
 header li:hover {
   transition: background-color 0.5s ease;
-  /* background-color: #ebebe9; */
+  background-color: #ebebe9;
   color: #253628;
   border-radius: 47px;
 }
