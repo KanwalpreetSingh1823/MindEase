@@ -351,13 +351,19 @@ const toggleButton = document.getElementById('nav-toggle');
     </main>
     <script src="script.js"></script>
     <script>
-      const chatbotId = "{{NEXT_PUBLIC_CHATBOT_ID}}"; 
-      
-      // Create the chatbot script dynamically.
-      const script = document.createElement('script');
-      script.src = "https://app.thinkstack.ai/bot/thinkstackai-loader.min.js";
-      script.setAttribute('chatbot_id', chatbotId); // Inject the chatbot ID as an attribute.
-      document.body.appendChild(script);
+      // Fetch the chatbot ID from the environment variable.
+      const chatbotId = process.env.NEXT_PUBLIC_CHATBOT_ID;
+  
+      if (chatbotId) {
+        // Dynamically create the chatbot script.
+        const script = document.createElement('script');
+        script.src = "https://app.thinkstack.ai/bot/thinkstackai-loader.min.js";
+        script.setAttribute('chatbot_id', chatbotId);
+        document.body.appendChild(script);
+      } else {
+        console.error('Chatbot ID not found. Make sure the environment variable is set.');
+      }
     </script>
+    
   </body>
 </html>
