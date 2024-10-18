@@ -28,7 +28,7 @@
   </head>
   <body>
     <div class="load">
-      <img src="/Frontend/assets/loader.gif" alt="loading...">
+      <img src="/Frontend/assets/loader.gif" alt="loading..." />
     </div>
     <main class="main-content">
       <header>
@@ -38,7 +38,8 @@
               <div class="nav__logo">Mind<span>Ease</span></div>
             </a>
             <button class="nav__toggle" id="nav-toggle">
-              <i class="ri-menu-line"></i> <!-- Add RemixIcon or any other icon for the hamburger menu -->
+              <i class="ri-menu-line"></i>
+              <!-- Add RemixIcon or any other icon for the hamburger menu -->
             </button>
             <ul class="nav__links" id="nav-links">
               <li class="link"><a href="index.html">Home</a></li>
@@ -54,8 +55,12 @@
               </li>
               <li class="link"><a href="#all-services">Pages</a></li>
               <li class="link"><a href="#">Blog</a></li>
-              <li class="link"><a href="/Frontend/Contact-Us/Contact-Us.html">Contact Us</a></li>
-              <li class="link"><a href="/Frontend/Login/Login.html">Login</a></li>
+              <li class="link">
+                <a href="/Frontend/Contact-Us/Contact-Us.html">Contact Us</a>
+              </li>
+              <li class="link">
+                <a href="/Frontend/Login/Login.html">Login</a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -66,12 +71,14 @@
                 Welcome to a Place of Healing and Growth
               </h1>
               <p class="text1">
-                "Every Step You Take Brings You Closer to Healing" "You’re Not Alone—We’re Here to Help" 
-                "Your Mental Health Matters—Take the First Step Today" 
-                "Find Strength and Resilience in Every Moment"
+                "Every Step You Take Brings You Closer to Healing" "You’re Not
+                Alone—We’re Here to Help" "Your Mental Health Matters—Take the
+                First Step Today" "Find Strength and Resilience in Every Moment"
                 "Healing is a Journey—Let Us Walk It with You"
               </p>
-              <a href="#all-services"><button class="btn_service">See Services</button></a>
+              <a href="#all-services"
+                ><button class="btn_service">See Services</button></a
+              >
             </div>
             <div class="header__form">
               <form>
@@ -86,14 +93,14 @@
           </div>
         </div>
       </header>
-<script>
-const toggleButton = document.getElementById('nav-toggle');
-  const navLinks = document.getElementById('nav-links');
-  
-  toggleButton.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-  });
-  </script>      
+      <script>
+        const toggleButton = document.getElementById("nav-toggle");
+        const navLinks = document.getElementById("nav-links");
+
+        toggleButton.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+        });
+      </script>
       <section class="section__container service__container" id="service">
         <div class="forms1">
           <div class="service__header" id="all-services">
@@ -166,22 +173,23 @@ const toggleButton = document.getElementById('nav-toggle');
           </div>
         </div>
       </section>
-      <section class="section__container about__container" id="about" >
+      <section class="section__container about__container" id="about">
         <div class="about__content left" id="about-section">
-          <h2  class="container4">About Us</h2>
+          <h2 class="container4">About Us</h2>
           <p class="container1">
             Welcome to our healthcare website, your one-stop destination for
-            reliable and comprehensive mental health information. We are committed
-            to promoting wellness and providing valuable resources to empower
-            you on your health journey. Explore our extensive collection of
-            expertly written articles and guides covering a wide range of health
-            topics. From understanding common medical conditions to tips for
-            maintaining a healthy lifestyle, our content is designed to educate,
-            inspire, and support you in making informed choices for your health.
-            Discover practical health tips and lifestyle advice to optimize your
-            physical and mental well-being. We believe that small changes can
-            lead to significant improvements in your quality of life, and we're
-            here to guide you on your path to a healthier and happier you.
+            reliable and comprehensive mental health information. We are
+            committed to promoting wellness and providing valuable resources to
+            empower you on your health journey. Explore our extensive collection
+            of expertly written articles and guides covering a wide range of
+            health topics. From understanding common medical conditions to tips
+            for maintaining a healthy lifestyle, our content is designed to
+            educate, inspire, and support you in making informed choices for
+            your health. Discover practical health tips and lifestyle advice to
+            optimize your physical and mental well-being. We believe that small
+            changes can lead to significant improvements in your quality of
+            life, and we're here to guide you on your path to a healthier and
+            happier you.
           </p>
         </div>
         <div class="about__image">
@@ -349,21 +357,9 @@ const toggleButton = document.getElementById('nav-toggle');
         </div>
       </footer>
     </main>
-    <script src="script.js"></script>
-    <script>
-      // Fetch the chatbot ID from the environment variable.
-      const chatbotId = process.env.NEXT_PUBLIC_CHATBOT_ID;
-  
-      if (chatbotId) {
-        // Dynamically create the chatbot script.
-        const script = document.createElement('script');
-        script.src = "https://app.thinkstack.ai/bot/thinkstackai-loader.min.js";
-        script.setAttribute('chatbot_id', chatbotId);
-        document.body.appendChild(script);
-      } else {
-        console.error('Chatbot ID not found. Make sure the environment variable is set.');
-      }
-    </script>
-    
+    <script
+      chatbot_id="671204c7ce6bd2f754282f9c"
+      src="https://app.thinkstack.ai/bot/thinkstackai-loader.min.js"
+    ></script>
   </body>
 </html>
