@@ -350,5 +350,14 @@ const toggleButton = document.getElementById('nav-toggle');
       </footer>
     </main>
     <script src="script.js"></script>
+    <script>
+      const chatbotId = "{{NEXT_PUBLIC_CHATBOT_ID}}"; 
+      
+      // Create the chatbot script dynamically.
+      const script = document.createElement('script');
+      script.src = "https://app.thinkstack.ai/bot/thinkstackai-loader.min.js";
+      script.setAttribute('chatbot_id', chatbotId); // Inject the chatbot ID as an attribute.
+      document.body.appendChild(script);
+    </script>
   </body>
 </html>
