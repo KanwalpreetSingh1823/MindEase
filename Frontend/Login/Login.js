@@ -2,12 +2,17 @@ const BACKEND_URL = 'https://backend-login-form.onrender.com'; // Use Render bac
 
 // Function to send OTP
 async function submitLogin() {
+  const submitButton = document.getElementById('submit-button'); // Button element
   const name = document.getElementById('name').value;
   const email = document.getElementById('email').value;
   const password = document.getElementById('password').value;
 
   if (name && email && password) {
     try {
+       // Disable the button and show a loader
+       submitButton.disabled = true;
+       submitButton.innerHTML = `<span class="loader"></span> Sending...`;
+
       const response = await fetch(`${BACKEND_URL}/send-otp`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -26,6 +31,11 @@ async function submitLogin() {
       console.error('Error:', error);
       alert('Server error. Please try again later.');
     }
+    finally {
+      // Re-enable the button and restore text
+      submitButton.disabled = false;
+      submitButton.innerHTML = 'Submit';
+  }
   } else {
     alert('Please fill all fields!');
   }
