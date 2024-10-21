@@ -46,7 +46,7 @@ async function verifyOTP() {
     const result = await response.json();
     if (result.success) {
       alert('OTP Verified! Redirecting to Home Page...');
-      window.location.href = "home.html"; // Replace with your home page URL
+      window.location.href = "https://mindeaseapp.vercel.app/"; // Replace with your home page URL
     } else {
       alert('Incorrect OTP. Please try again.');
     }
