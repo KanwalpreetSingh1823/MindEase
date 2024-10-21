@@ -27,6 +27,9 @@ body {
 html{
   scroll-behavior: smooth;
 }
+.game-list--heading{
+  text-align: center;
+}
 
 .secton_container{
     max-width:var(--max-width);

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const loadingScreen = document.querySelector(".load");
+    const loadingScreen = document.querySelector(".spinner");
     const mainData = document.querySelector(".main-content");
     
     if (loadingScreen) {
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 loadingScreen.style.display = 'none';
                 mainData.style.display = "block";
             }, 1000);  // Wait for the transition to finish before hiding
-        }, 3000);
+        }, 2500);
     }
 });
 

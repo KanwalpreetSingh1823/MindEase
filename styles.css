@@ -42,16 +42,22 @@ html{
   cursor: pointer;
 }
 
+.spinner {
+  width: 55px;
+  height: 55px;
+  left:45vw;
+  top:45vh;
+  position: fixed;
+  border-radius: 50%;
+  background: conic-gradient(#0000 10%,#000000);
+  -webkit-mask: radial-gradient(farthest-side,#0000 calc(70% - -5px),#000 0);
+  animation: spinner-zp9dbg 0.5s infinite linear;
+}
 
-/* .load{
-  width:100vw;
-} */
-
-.load img{
-  width:10rem;
-  height:10rem;
-  margin-left: 43vw;
-  margin-top: 30vh;
+@keyframes spinner-zp9dbg {
+  to {
+     transform: rotate(1turn);
+  }
 }
 
 .secton_container{
