@@ -47,6 +47,9 @@ async function verifyOTP() {
   const otp = document.getElementById('otp').value;
 
   try {
+    submitButton.disabled = true;
+    submitButton.innerHTML = `<span class="loader"></span> Verifying...`;
+
     const response = await fetch(`${BACKEND_URL}/verify-otp`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
