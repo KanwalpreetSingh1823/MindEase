@@ -5,12 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OTP Login</title>
   <link rel="stylesheet" href="Login.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
   <div class="container" id="login-form">
-    <h2>Login Form</h2>
+    <h2 class = "m" >Member Login</h2>
+    <i class="ri-user-line"></i>
     <input type="text" id="name" placeholder="Enter your Name" required>
+    <i class="ri-mail-line"></i>
     <input type="email" id="email" placeholder="Enter your Email" required>
+    <i class="ri-lock-line"></i>
     <input type="password" id="password" placeholder="Enter your Password" required>
     <button class="submit-button" onclick="submitLogin()">Submit</button>
   </div>
