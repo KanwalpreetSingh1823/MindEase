@@ -16,11 +16,12 @@
   
   .container {
     background-color: white;
-    padding: 30px;
+    padding: 60px 20px;;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     width: 300px;
     text-align: center;
+    padding-top:50px;
   }
 
   .loader {
@@ -42,10 +43,23 @@
   
   input {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
+  }
+
+  /* .login{
+    margin-bottom: 5px;;
+    padding-bottom: 15px;
+  } */
+
+  .otp h2{
+    margin-bottom: 20px;
+  }
+  .login img{
+    width:60%;
+    height:60%;
   }
   
   button {
