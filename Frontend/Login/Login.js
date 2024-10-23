@@ -1,8 +1,8 @@
 const BACKEND_URL = 'https://backend-login-form.onrender.com'; // Use Render backend URL
+const submitButton = document.querySelector('.submit-button'); // Button element
 
 // Function to send OTP
 async function submitLogin() {
-  const submitButton = document.getElementById('submit-button'); // Button element
   const name = document.getElementById('name').value;
   const email = document.getElementById('email').value;
   const password = document.getElementById('password').value;
