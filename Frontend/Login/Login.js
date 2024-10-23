@@ -1,5 +1,6 @@
 const BACKEND_URL = 'https://backend-login-form.onrender.com'; // Use Render backend URL
-const submitButton = document.querySelector('.submit-button'); // Button element
+const submitButton = document.querySelector('.submit-button'); // Button 
+const otpVerifybutton = document.querySelector('.otp-verify-button'); // Button element
 
 // Function to send OTP
 async function submitLogin() {
@@ -47,8 +48,8 @@ async function verifyOTP() {
   const otp = document.getElementById('otp').value;
 
   try {
-    submitButton.disabled = true;
-    submitButton.innerHTML = `<span class="loader"></span> Verifying...`;
+    otpVerifybutton.disabled = true;
+    otpVerifybutton.innerHTML = `<span class="loader"></span> Verifying...`;
 
     const response = await fetch(`${BACKEND_URL}/verify-otp`, {
       method: 'POST',
