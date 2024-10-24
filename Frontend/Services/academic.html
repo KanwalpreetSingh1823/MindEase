@@ -17,35 +17,35 @@
     
 </head>
 <body>
+    <section class="main">
+        <div class="navBar">
+            <nav class="section__container nav__container">
+              <a href="/index.html">
+                <div class="nav__logo">Mind<span>Ease</span></div>
+              </a>
+              <button class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+                <!-- Add RemixIcon or any other icon for the hamburger menu -->
+              </button>
+              <ul class="nav__links" id="nav-links">
+                <li class="link"><a href="/index.html">Home</a></li>
+                <li class="link"><a href="mood.html">Mood</a></li>
+                <li class="link"><a href="emotional.html">Emotional</a></li>
+                <li class="link"><a href="physical.html">Physical</a></li>
+                <li class="link"><a href="psychological.html">Psychological</a></li>
+              </ul>
+            </nav>
+          </div>
+          <script>
+            const toggleButton = document.getElementById("nav-toggle");
+            const navLinks = document.getElementById("nav-links");
     
-    <div class="navbar navbar-expand-lg ">
-        <a href="/index.html" id="logo" class="navbar-brand">Mind<span>Ease</span></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span> <!-- Bootstrap toggle icon -->
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="/index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Psychological.html">Psychological</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Physical.html">Physical Health</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="mood.html">Mood Disorders</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="socialproblems.html">Social</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="emotional.html">Emotional</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+            toggleButton.addEventListener("click", () => {
+              navLinks.classList.toggle("active");
+            });
+          </script>
+    
+   
 
 <div class="container">
       <div class="hero-section">
@@ -63,27 +63,28 @@
             loop: true
         });
     </script>
+</section>
 
       <marquee behavior="scroll" direction="left">
         <div class="images">
             <div class="image">
-                <img src="../assets/academic/img1.jpg" alt="Stress">
+                <img src="/Frontend/assets/academic/img1.jpg" alt="Stress">
             </div>
             <div class="image">
-                <img src="../assets/academic/img2.jpg" alt="Stress">
+                <img src="/Frontend/assets/academic/img2.jpg" alt="Stress">
             </div>
             <div class="image">
-                <img src="../assets/academic/img3.jpg" alt="Stress">
+                <img src="/Frontend/assets/academic/img3.jpg" alt="Stress">
             </div>
             <div class="image">
-                <img src="../assets/academic/img4.jpg" alt="Stress">
+                <img src="/Frontend/assets/academic/img4.jpg" alt="Stress">
             </div>
         </div>
       </marquee>
 
       <h2 id="all-types-test">Types of Academic Problems</h2>
 
-      <div class="tests">
+      <div class="test">
         <div class="test">
                 <li><strong>Learning Disabilities and Difficulties</strong>
                 <p>
@@ -114,8 +115,7 @@
                         Feeling overwhelmed by academic responsibilities and deadlines
                         Difficulty balancing schoolwork with other activities or commitments</P>
         </div>
-      </div>
-      <div class="tests">
+    
         <div class="test">
                 <li><strong>Bullying and Peer Pressure</strong>
                 <p>

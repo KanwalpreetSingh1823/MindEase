@@ -1,93 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>emotional</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="dashboard.css"> 
+    <link rel="stylesheet" href="dashboard.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
-    
-</head>
-<body>
-    
-    <div class="navbar navbar-expand-lg ">
-        <a href="/index.html" id="logo" class="navbar-brand">Mind<span>Ease</span></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span> <!-- Bootstrap toggle icon -->
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="/index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Psychological.html">Psychological</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Physical.html">Physical Health</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="mood.html">Mood Disorders</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="socialproblems.html">Social</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="academic.html">Academic</a>
-                </li>
-            </ul>
-        </div>
-    </div>
 
-<div class="container">
-      <div class="hero-section">
-        <section id="intro">
-            <h1>Emotional Problems = <span class="textline"></span></h1>
-            <p>Emotional problems refer to difficulties in managing emotions that can impact an individual's mental health, behavior, and overall quality of life. These problems can arise due to various factors such as life experiences, trauma, stress, or biological predispositions. Here are some common emotional problems and how they affect mental health:</p>
-          </section>
-      </div>
-      <script>
-        var type = new Typed('.textline', {
-            strings: ['Anxiety', ' Depression', 'Anger and Irritability'],
-            typeSpeed: 100,
-            backSpeed: 100,
-            backDelay: 1000,
-            loop: true
+</head>
+
+<body>
+    <section class="main">
+        <div class="navBar">
+            <nav class="section__container nav__container">
+              <a href="/index.html">
+                <div class="nav__logo">Mind<span>Ease</span></div>
+              </a>
+              <button class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+                <!-- Add RemixIcon or any other icon for the hamburger menu -->
+              </button>
+              <ul class="nav__links" id="nav-links">
+                <li class="link"><a href="/index.html">Home</a></li>
+                <li class="link"><a href="mood.html">Mood</a></li>
+                <li class="link"><a href="emotional.html">Emotional</a></li>
+                <li class="link"><a href="physical.html">Physical</a></li>
+                <li class="link"><a href="psychological.html">Psychological</a></li>
+              </ul>
+            </nav>
+          </div>
+          
+
+        <div class="container">
+            <div class="hero-section">
+                <section id="intro">
+                    <h1>Emotional Problems = <span class="textline"></span></h1>
+                    <p>Emotional problems refer to difficulties in managing emotions that can impact an individual's
+                        mental health, behavior, and overall quality of life.Here are some common emotional problems and
+                        how they affect mental health:</p>
+                </section>
+            </div>
+            <script>
+                var type = new Typed('.textline', {
+                    strings: ['Anxiety', ' Depression', 'Anger and Irritability'],
+                    typeSpeed: 100,
+                    backSpeed: 100,
+                    backDelay: 1000,
+                    loop: true
+                });
+            </script>
+    </section>
+    <script>const toggleButton = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        toggleButton.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
         });
     </script>
 
-      <marquee behavior="scroll" direction="left">
+    <marquee behavior="scroll" direction="left">
         <div class="images">
             <div class="image">
-                <img src="../assets/emotional/img1.jpg" alt="Stress">
+                <img src="/Frontend/assets/emotional/img1.jpg" alt="Stress">
             </div>
             <div class="image">
-                <img src="../assets/social/img2.jpg" alt="Stress">
+                <img src="/Frontendassets/social/img2.jpg" alt="Stress">
             </div>
             <div class="image">
-                <img src="../assets/emotional/img3.jpg" alt="Stress">
+                <img src="/Frontend/assets/emotional/img3.jpg" alt="Stress">
             </div>
             <div class="image">
-                <img src="../assets/emotional/img4.jpg" alt="Stress">
+                <img src="/Frontend/assets/emotional/img4.jpg" alt="Stress">
             </div>
         </div>
-      </marquee>
+    </marquee>
 
-      <h2 id="all-types-test">Types of Emotional Problems</h2>
+    <h2 id="all-types-test">Types of Emotional Problems</h2>
 
-      <div class="tests">
+    <div class="test">
         <div class="test">
-                <li><strong> Anxiety</strong>
+            <li><strong> Anxiety</strong>
                 <p>
-                    Description: Anxiety is a feeling of worry, nervousness, or fear that is often excessive or irrational. It can be a reaction to stress or a trigger for various mental health disorders, including generalized anxiety disorder (GAD), social anxiety disorder, and panic disorder.
+                    Description: Anxiety is a feeling of worry, nervousness, or fear that is often excessive or
+                    irrational. It can be a reaction to stress or a trigger for various mental health disorders,
+                    including generalized anxiety disorder (GAD), social anxiety disorder, and panic disorder.
                 </p>
                 <p>Symptoms:
                     Excessive worry or fear about everyday situations
@@ -95,31 +101,37 @@
                     Physical symptoms like sweating, trembling, rapid heartbeat, and shortness of breath</p>
         </div>
         <div class="test">
-                <li><strong>Depression</strong>
-                    <p>
-                        Description: Depression is a mood disorder characterized by persistent feelings of sadness, hopelessness, and a lack of interest or pleasure in activities. It can affect thoughts, feelings, and behaviors and may lead to various emotional and physical problems.
-                    </p>
-                    <p>Persistent sadness or low mood
-                        Loss of interest in activities once enjoyed
-                        Changes in appetite and sleep patterns, fatigue, and feelings of worthlessness or guilt
-                        Difficulty concentrating and making decisions, thoughts of death or suicide</p>
-        </div>
-        <div class="test">
-                <li><strong>Anger and Irritability</strong>
-                    <p>
-                        Description: Anger is a natural emotion, but when it is intense, chronic, or difficult to control, it can become a problem. Anger issues can be related to underlying mental health conditions like depression, anxiety, or personality disorders.
-                    </p>
-                    <P>Frequent or intense feelings of frustration and anger
-                        Irritability and a low tolerance for frustration
-                        Aggressive behavior, such as yelling, physical violence, or verbal abuse
-                        Difficulty calming down or managing emotions once angered</P>
-        </div>
-      </div>
-      <div class="tests">
-        <div class="test">
-                <li><strong> Emotional Numbness</strong>
+            <li><strong>Depression</strong>
                 <p>
-                    Description: Emotional numbness is a reduced ability to feel emotions, often as a coping mechanism for trauma or overwhelming stress. It is commonly associated with conditions like post-traumatic stress disorder (PTSD) or depression.
+                    Description: Depression is a mood disorder characterized by persistent feelings of sadness,
+                    hopelessness, and a lack of interest or pleasure in activities. It can affect thoughts, feelings,
+                    and behaviors and may lead to various emotional and physical problems.
+                </p>
+                <p>Persistent sadness or low mood
+                    Loss of interest in activities once enjoyed
+                    Changes in appetite and sleep patterns, fatigue, and feelings of worthlessness or guilt
+                    Difficulty concentrating and making decisions, thoughts of death or suicide</p>
+        </div>
+        <div class="test">
+            <li><strong>Anger and Irritability</strong>
+                <p>
+                    Description: Anger is a natural emotion, but when it is intense, chronic, or difficult to control,
+                    it can become a problem. Anger issues can be related to underlying mental health conditions like
+                    depression, anxiety, or personality disorders.
+                </p>
+                <P>Frequent or intense feelings of frustration and anger
+                    Irritability and a low tolerance for frustration
+                    Aggressive behavior, such as yelling, physical violence, or verbal abuse
+                    Difficulty calming down or managing emotions once angered</P>
+        </div>
+   
+    
+        <div class="test">
+            <li><strong> Emotional Numbness</strong>
+                <p>
+                    Description: Emotional numbness is a reduced ability to feel emotions, often as a coping mechanism
+                    for trauma or overwhelming stress. It is commonly associated with conditions like post-traumatic
+                    stress disorder (PTSD) or depression.
                 </p>
                 <P>Feeling disconnected or detached from oneself and others
                     Lack of emotional response to positive or negative events
@@ -127,95 +139,119 @@
                     A sense of emptiness or feeling "flat"</P>
         </div>
         <div class="test">
-                <li><strong>Grief and Loss</strong>
-                    <p>
-                        Description: Grief is a natural response to loss, such as the death of a loved one, a breakup, or losing a job. While grief is a normal process, prolonged or complicated grief can lead to significant emotional problems.
-                    </p>
-                    <P>Intense sadness, yearning, or longing for the lost person or situation
-                        Guilt, anger, or regret about the loss
-                        Difficulty accepting the reality of the loss
-                        Isolation or withdrawal from social activities</P>
+            <li><strong>Grief and Loss</strong>
+                <p>
+                    Description: Grief is a natural response to loss, such as the death of a loved one, a breakup, or
+                    losing a job. While grief is a normal process, prolonged or complicated grief can lead to
+                    significant emotional problems.
+                </p>
+                <P>Intense sadness, yearning, or longing for the lost person or situation
+                    Guilt, anger, or regret about the loss
+                    Difficulty accepting the reality of the loss
+                    Isolation or withdrawal from social activities</P>
         </div>
         <div class="test">
-                <li><strong> Shame and Guilt</strong>
-                    <p>
-                        Description: Shame and guilt are powerful emotions that often result from perceived or actual wrongdoing or failure. They can lead to negative self-perception and impact mental health.
-                    </p>
-                    <P>Persistent feelings of worthlessness or inadequacy
-                        Obsessive thoughts about mistakes or perceived failures
-                        Withdrawal from others due to fear of judgment or rejection
-                        Self-punishing behaviors or self-sabotage</P>
-                        <P>Impact: Chronic shame and guilt can contribute to depression, anxiety, low self-esteem, and self-destructive behaviors. They can also hinder personal growth and social relationships.</P>
+            <li><strong> Shame and Guilt</strong>
+                <p>
+                    Description: Shame and guilt are powerful emotions that often result from perceived or actual
+                    wrongdoing or failure. They can lead to negative self-perception and impact mental health.
+                </p>
+                <P>Persistent feelings of worthlessness or inadequacy
+                    Obsessive thoughts about mistakes or perceived failures
+                    Withdrawal from others due to fear of judgment or rejection
+                    Self-punishing behaviors or self-sabotage</P>
+                <P>Impact: Chronic shame and guilt can contribute to depression, anxiety, low self-esteem, and
+                    self-destructive behaviors. They can also hinder personal growth and social relationships.</P>
         </div>
-      </div>
-      
-      <section id="interactive-test">
-        <h2 id ="all-types-test1">Take a Quick Test</h2>
-        <form>
-          <label for="q1">I find it easy to understand other people's emotions<span><i class="ri-emotion-line"></span></i></label>
-          <select id="q1">
-            <option value="1">Strongly Disagree</option>
-            <option value="2">Disagree</option>
-            <option value="3">Neutral</option>
-            <option value="4">Agree</option>
-            <option value="5">Strongly Agree</option>
-          </select>
-          <br>
-          <label for="q2">I often feel overwhelmed by my emotions<span><i class="ri-emotion-line"></span></i></label>
-          <select id="q2">
-            <option value="1">Strongly Disagree</option>
-            <option value="2">Disagree</option>
-            <option value="3">Neutral</option>
-            <option value="4">Agree</option>
-            <option value="5">Strongly Agree</option>
-          </select>
-          <br>
-          <input id="submit-btn" type="submit" value="Submit">
-        </form>
-      </section>
-      
-      <section id="resources">
-        <h2>Recommended Resources</h2>
-        <div class="videos">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/dDQ5tgd1_HY?si=mpZ4oTSveJoWPFOy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/0dsq_y9V2-Q?si=bYGfKfX_Tbcp-B1C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/LhYRD0XmzOU?si=tV9x_k6G1TsMe_Sc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/meOWV1w2GE8?si=pIT3aRpYfYNj2-sI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZjIRYn7x8sk?si=29U6hPSim2_xhsQ-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-       
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/EpNoIJeGPqE?si=Ivfo4inJ3clHmNIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
-      </section>
+    <section id="interactive-test">
+        <h2 id="all-types-test1">Take a Quick Test</h2>
+        <form>
+            <label for="q1">I find it easy to understand other people's emotions<span><i
+                        class="ri-emotion-line"></span></i></label>
+            <select id="q1">
+                <option value="1">Strongly Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strongly Agree</option>
+            </select>
+            <br>
+            <label for="q2">I often feel overwhelmed by my emotions<span><i class="ri-emotion-line"></span></i></label>
+            <select id="q2">
+                <option value="1">Strongly Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strongly Agree</option>
+            </select>
+            <br>
+            <input id="submit-btn" type="submit" value="Submit">
+        </form>
+    </section>
 
-<footer>
-<div class="footer">
+    <section id="resources">
+        <h2>Recommended Resources</h2>
+        <div class="videos">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dDQ5tgd1_HY?si=mpZ4oTSveJoWPFOy"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<div class="row">
-<a href="#"><i class="fa fa-facebook"></i></a>
-<a href="#"><i class="fa fa-instagram"></i></a>
-<a href="#"><i class="fa fa-youtube"></i></a>
-<a href="#"><i class="fa fa-twitter"></i></a>
-</div>
-<br>
-<br>
-<div class="row">
-<ul>
-<li><a href="#">Contact us</a></li>
-<li><a href="#">Our Services</a></li>
-<li><a href="#">Privacy Policy</a></li>
-<li><a href="#">Terms & Conditions</a></li>
-<li><a href="#">Career</a></li>
-</ul>
-</div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0dsq_y9V2-Q?si=bYGfKfX_Tbcp-B1C"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LhYRD0XmzOU?si=tV9x_k6G1TsMe_Sc"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<div class="row">
-Copyright © 2024 MINDEASE  - All rights reserved || Designed By: Kanwalpreet Singh & Jasmeen Singh
-</div>
-</div>
-</footer>
-</div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/meOWV1w2GE8?si=pIT3aRpYfYNj2-sI"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZjIRYn7x8sk?si=29U6hPSim2_xhsQ-"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EpNoIJeGPqE?si=Ivfo4inJ3clHmNIc"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer">
+
+            <div class="row">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <ul>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Career</a></li>
+                </ul>
+            </div>
+
+            <div class="row">
+                Copyright © 2024 MINDEASE - All rights reserved || Designed By: Kanwalpreet Singh & Jasmeen Singh
+            </div>
+        </div>
+    </footer>
+    </div>
 </body>
+
 </html>

@@ -1,223 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mood</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="dashboard.css"> 
+    <link rel="stylesheet" href="dashboard.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
-    
+
 </head>
+
 <body>
+    <section class="main">
+        <div class="navBar">
+            <nav class="section__container nav__container">
+              <a href="/index.html">
+                <div class="nav__logo">Mind<span>Ease</span></div>
+              </a>
+              <button class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+                <!-- Add RemixIcon or any other icon for the hamburger menu -->
+              </button>
+              <ul class="nav__links" id="nav-links">
+                <li class="link"><a href="/index.html">Home</a></li>
+                <li class="link"><a href="mood.html">Mood</a></li>
+                <li class="link"><a href="emotional.html">Emotional</a></li>
+                <li class="link"><a href="physical.html">Physical</a></li>
+                <li class="link"><a href="psychological.html">Psychological</a></li>
+              </ul>
+            </nav>
+          </div>
+          <script>
+            const toggleButton = document.getElementById("nav-toggle");
+            const navLinks = document.getElementById("nav-links");
     
-    <div class="navbar navbar-expand-lg ">
-        <a href="/index.html" id="logo" class="navbar-brand">Mind<span>Ease</span></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span> <!-- Bootstrap toggle icon -->
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">.
-                <li class="nav-item">
-                    <a class="nav-link" href="/index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Psychological.html">Psychological</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Physical.html">Physical Health</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="socialproblems.html">Social</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="emotional.html">Emotional</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="academic.html">Academic</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+            toggleButton.addEventListener("click", () => {
+              navLinks.classList.toggle("active");
+            });
+          </script>
+        <div class="container">
+            <div class="hero-section">
+                <section id="intro">
+                    <h1>Mood Disorders = <span class="textline"></span></h1>
+                    <p>Mood disorders are a category of mental health conditions that primarily affect a person’s
+                        emotional state. These disorders can vary in severity and duration and are influenced by a
+                        combination of genetic, biological, environmental, and psychological factors.</p>
+                </section>
+            </div>
+            <script>
+                var type = new Typed('.textline', {
+                    strings: ['Loss of interest ', 'loss of energy', 'Feelings of worthlessness'],
+                    typeSpeed: 100,
+                    backSpeed: 100,
+                    backDelay: 1000,
+                    loop: true
+                });
+            </script>
+    </section>
 
-<div class="container">
-      <div class="hero-section">
-        <section id="intro">
-            <h1>Mood Disorders = <span class="textline"></span></h1>
-            <p>Mood disorders are a category of mental health conditions that primarily affect a person’s emotional state. They involve significant and persistent disturbances in mood, which can impact daily functioning, relationships, and overall quality of life. These disorders can vary in severity and duration and are influenced by a combination of genetic, biological, environmental, and psychological factors.</p>
-          </section>
-      </div>
-      <script>
-        var type = new Typed('.textline', {
-            strings: ['Loss of interest ', 'loss of energy', 'Feelings of worthlessness'],
-            typeSpeed: 100,
-            backSpeed: 100,
-            backDelay: 1000,
-            loop: true
-        });
-    </script>
-
-      <marquee behavior="scroll" direction="left">
+    <marquee behavior="scroll" direction="left">
         <div class="images">
             <div class="image">
-                <img src="../assets/moods/img1.jpg" alt="Stress">
+                <img src="/Frontend/assets/moods/img1.jpg" alt="Stress">
             </div>
             <div class="image">
-                <img src="../assets/moods/img2.jpg" alt="Stress">
+                <img src="/Frontend/assets/moods/img2.jpg" alt="Stress">
             </div>
             <div class="image">
-                <img src="../assets/moods/img3.jpg" alt="Stress">
+                <img src="/Frontend/assets/moods/img3.jpg" alt="Stress">
             </div>
             <div class="image">
-                <img src="../assets/moods/img4.jpg" alt="Stress">
+                <img src="/Frontend/assets/moods/img4.jpg" alt="Stress">
             </div>
         </div>
-      </marquee>
+    </marquee>
 
-      <h2 id="all-types-test">Types of Mood Disorders</h2>
+    <h2 id="all-types-test">Types of Mood Disorders</h2>
 
-      <div class="tests">
+    <div class="test">
         <div class="test">
-                <li><strong>Major Depressive Disorder (MDD)</strong>
+            <li><strong>Major Depressive Disorder (MDD)</strong>
                 <p>
-                   <p> Persistent sad or "empty" mood</p>
-<p>Loss of interest or pleasure in activities once enjoyed</p>
-<p>Significant weight loss or gain, or changes in appetite</p>
-<p>Fatigue or loss of energy</p>
-<p>Feelings of worthlessness or excessive guilt</p>
-<p>Difficulty thinking, concentrating, or making decisions</p>
-<P>Recurrent thoughts of death or suicide</p>
-    <p>Impact: Major depressive disorder can severely impact daily life, relationships, and work or school performance. It can also lead to physical health problems, such as heart disease or weakened immune function, due to chronic stress and poor self-care.</p>
+                <p> Persistent sad or "empty" mood</p>
+                <p>Loss of interest or pleasure in activities once enjoyed</p>
+                <p>Significant weight loss or gain, or changes in appetite</p>
+                <p>Fatigue or loss of energy</p>
+                <p>Feelings of worthlessness or excessive guilt</p>
+                <p>Difficulty thinking, concentrating, or making decisions</p>
+                <P>Recurrent thoughts of death or suicide</p>
+                <p>Impact: Major depressive disorder can severely impact daily life, relationships, and work or school
+                    performance. It can also lead to physical health problems, such as heart disease or weakened immune
+                    function, due to chronic stress and poor self-care.</p>
         </div>
         <div class="test">
-                <li><strong>Psychotic Depression</strong>
-                    <p>
-                        Description: A severe form of depression that occurs when a person has depressive episodes with psychotic symptoms, such as hallucinations or delusions. These psychotic features often have a depressive theme, such as delusions of guilt, poverty, or illness.
-                    </p>
-                    <p>Symptoms:
-                        Depressive symptoms, including deep sadness, hopelessness, and fatigue
-                        Psychotic symptoms, such as delusions or hallucinations, often related to feelings of worthlessness or guilt</p>
-                        <P>Impact: Psychotic depression can be highly debilitating, increasing the risk of suicide and requiring intensive treatment, often including both antidepressants and antipsychotic medications.</P>
-        </div>
-        <div class="test">
-                <li><strong>Adjustment Disorder with Depressed Mood</strong>
-                    <p>
-                        Description: A mood disorder that occurs in response to a significant life stressor or change (e.g., divorce, job loss, death of a loved one). Unlike major depressive disorder, the symptoms are usually temporary and directly related to the external event.
-                    </p>
-                    <p>Symptoms:
-                        Low mood, sadness, and tearfulness
-                        Feelings of hopelessness or being overwhelmed</p>
-        </div>
-      </div>
-      <div class="tests">
-        <div class="test">
-                <li><strong>Double Depression</strong>
+            <li><strong>Psychotic Depression</strong>
                 <p>
-                    Description: Double depression occurs when a person with persistent depressive disorder (dysthymia) experiences an episode of major depressive disorder (MDD). The chronic low mood of dysthymia can make the person more vulnerable to major depressive episodes.
+                    Description: A severe form of depression that occurs when a person has depressive episodes with
+                    psychotic symptoms, such as hallucinations or delusions. These psychotic features often have a
+                    depressive theme, such as delusions of guilt, poverty, or illness.
+                </p>
+                <p>Symptoms:
+                    Depressive symptoms, including deep sadness, hopelessness, and fatigue
+                    Psychotic symptoms, such as delusions or hallucinations, often related to feelings of worthlessness
+                    or guilt</p>
+                <P>Impact: Psychotic depression can be highly debilitating, increasing the risk of suicide and requiring
+                    intensive treatment, often including both antidepressants and antipsychotic medications.</P>
+        </div>
+        <div class="test">
+            <li><strong>Adjustment Disorder with Depressed Mood</strong>
+                <p>
+                    Description: A mood disorder that occurs in response to a significant life stressor or change (e.g.,
+                    divorce, job loss, death of a loved one). Unlike major depressive disorder, the symptoms are usually
+                    temporary and directly related to the external event.
+                </p>
+                <p>Symptoms:
+                    Low mood, sadness, and tearfulness
+                    Feelings of hopelessness or being overwhelmed</p>
+        </div>
+    
+        <div class="test">
+            <li><strong>Double Depression</strong>
+                <p>
+                    Description: Double depression occurs when a person with persistent depressive disorder (dysthymia)
+                    experiences an episode of major depressive disorder (MDD). The chronic low mood of dysthymia can
+                    make the person more vulnerable to major depressive episodes.
                 </p>
                 <p>Symptoms:
                     Symptoms of persistent depressive disorder, such as low self-esteem, fatigue, and chronic sadness
-                    More intense depressive symptoms typical of major depressive disorder, like severe fatigue, loss of interest in daily activities, significant weight changes, and thoughts of suicide during episodes
-                    Impact: Individuals with double depression often experience more severe symptoms and greater impairment in daily functioning than those with either condition alone. Treatment may require a combination of psychotherapy and medication.</p>
+                    More intense depressive symptoms typical of major depressive disorder, like severe fatigue, loss of
+                    interest in daily activities, significant weight changes, and thoughts of suicide during episodes
+                    Impact: Individuals with double depression often experience more severe symptoms and greater
+                    impairment in daily functioning than those with either condition alone. Treatment may require a
+                    combination of psychotherapy and medication.</p>
         </div>
         <div class="test">
-                <li><strong>Mood Disorder Due to a General Medical Condition</strong>
-                    <p>
-                        Description: Mood disturbances caused directly by the physiological effects of a general medical condition (such as hypothyroidism, chronic pain, or neurological disorders). The mood changes are a direct result of the medical condition and not due to a primary mood disorder.
-                    </p>
-                    <p>Symptoms:
-                        Depressive or manic symptoms linked to the underlying medical condition
-                        Symptoms that improve with treatment of the medical condition
-                        Examples of medical conditions that can cause mood disorders include Parkinson’s disease, stroke, multiple sclerosis, thyroid disorders, and chronic fatigue syndrome</p>
-                        <p>Impact: These mood disorders can complicate the management of the underlying medical condition and affect a person's overall quality of life. Effective management often requires treating both the medical condition and the mood symptoms.</p>
+            <li><strong>Mood Disorder Due to a General Medical Condition</strong>
+                <p>
+                    Description: Mood disturbances caused directly by the physiological effects of a general medical
+                    condition (such as hypothyroidism, chronic pain, or neurological disorders). The mood changes are a
+                    direct result of the medical condition and not due to a primary mood disorder.
+                </p>
+                <p>Symptoms:
+                    Depressive or manic symptoms linked to the underlying medical condition
+                    Symptoms that improve with treatment of the medical condition
+                    Examples of medical conditions that can cause mood disorders include Parkinson’s disease, stroke,
+                    multiple sclerosis, thyroid disorders, and chronic fatigue syndrome</p>
+                <p>Impact: These mood disorders can complicate the management of the underlying medical condition and
+                    affect a person's overall quality of life. Effective management often requires treating both the
+                    medical condition and the mood symptoms.</p>
         </div>
         <div class="test">
-                <li><strong> Depressive Disorders Due to Substance Withdrawal</strong>
-                    <p>
-                        Description: Mood disturbances, particularly depressive symptoms, that occur during withdrawal from substances such as alcohol, opioids, or benzodiazepines. The depressive symptoms are directly related to the physiological withdrawal process.
-                    </p>
-                    <P>Symptoms:
-                        Depressed mood, anhedonia (loss of pleasure), and fatigue
-                        Anxiety, irritability, and restlessness
-                        Physical symptoms related to withdrawal, such as tremors, sweating, and nausea</P>
-                        <p>Impact: Depression during withdrawal can complicate the recovery process, increase the risk of relapse, and may require medical and psychological support.</p>
+            <li><strong> Depressive Disorders Due to Substance Withdrawal</strong>
+                <p>
+                    Description: Mood disturbances, particularly depressive symptoms, that occur during withdrawal from
+                    substances such as alcohol, opioids, or benzodiazepines. The depressive symptoms are directly
+                    related to the physiological withdrawal process.
+                </p>
+                <P>Symptoms:
+                    Depressed mood, anhedonia (loss of pleasure), and fatigue
+                    Anxiety, irritability, and restlessness
+                    Physical symptoms related to withdrawal, such as tremors, sweating, and nausea</P>
+                <p>Impact: Depression during withdrawal can complicate the recovery process, increase the risk of
+                    relapse, and may require medical and psychological support.</p>
         </div>
-      </div>
-      
-      <section id="interactive-test">
-        <h2 id ="all-types-test1">Take a Quick Test</h2>
-        <form>
-          <label for="q1">I find it easy to understand other people's emotions<span><i class="ri-emotion-line"></span></i></label>
-          <select id="q1">
-            <option value="1">Strongly Disagree</option>
-            <option value="2">Disagree</option>
-            <option value="3">Neutral</option>
-            <option value="4">Agree</option>
-            <option value="5">Strongly Agree</option>
-          </select>
-          <br>
-          <label for="q2">I often feel overwhelmed by my emotions<span><i class="ri-emotion-line"></span></i></label>
-          <select id="q2">
-            <option value="1">Strongly Disagree</option>
-            <option value="2">Disagree</option>
-            <option value="3">Neutral</option>
-            <option value="4">Agree</option>
-            <option value="5">Strongly Agree</option>
-          </select>
-          <br>
-          <input id="submit-btn" type="submit" value="Submit">
-        </form>
-      </section>
-      
-      <section id="resources">
-        <h2>Recommended Resources</h2>
-        <div class="videos">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/uEod4sa-qPc?si=3Lh7_P4d-dIw0-Sy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/4R5JzLz2gH8?si=g3SeCfNHpbugdWXl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/6n8i7ua0mSw?si=XvADNVrlXt0GtojI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/DWAX9eUS7S0?si=beEN9-wJCtP9KcQt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/wtwNBf7mi6g?si=u0L7DjPWNOFL9yVc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/lJCUC0mRkPo?si=Pdp4K4DCDxvJ8DNE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
-      </section>
+    <section id="interactive-test">
+        <h2 id="all-types-test1">Take a Quick Test</h2>
+        <form>
+            <label for="q1">I find it easy to understand other people's emotions<span><i
+                        class="ri-emotion-line"></span></i></label>
+            <select id="q1">
+                <option value="1">Strongly Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strongly Agree</option>
+            </select>
+            <br>
+            <label for="q2">I often feel overwhelmed by my emotions<span><i class="ri-emotion-line"></span></i></label>
+            <select id="q2">
+                <option value="1">Strongly Disagree</option>
+                <option value="2">Disagree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Agree</option>
+                <option value="5">Strongly Agree</option>
+            </select>
+            <br>
+            <input id="submit-btn" type="submit" value="Submit">
+        </form>
+    </section>
 
-<footer>
-<div class="footer">
+    <section id="resources">
+        <h2>Recommended Resources</h2>
+        <div class="videos">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/uEod4sa-qPc?si=3Lh7_P4d-dIw0-Sy"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<div class="row">
-<a href="#"><i class="fa fa-facebook"></i></a>
-<a href="#"><i class="fa fa-instagram"></i></a>
-<a href="#"><i class="fa fa-youtube"></i></a>
-<a href="#"><i class="fa fa-twitter"></i></a>
-</div>
-<br>
-<br>
-<div class="row">
-<ul>
-<li><a href="#">Contact us</a></li>
-<li><a href="#">Our Services</a></li>
-<li><a href="#">Privacy Policy</a></li>
-<li><a href="#">Terms & Conditions</a></li>
-<li><a href="#">Career</a></li>
-</ul>
-</div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4R5JzLz2gH8?si=g3SeCfNHpbugdWXl"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<div class="row">
-Copyright © 2024 MINDEASE  - All rights reserved || Designed By: Kanwalpreet Singh & Jasmeen Singh
-</div>
-</div>
-</footer>
-</div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6n8i7ua0mSw?si=XvADNVrlXt0GtojI"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/DWAX9eUS7S0?si=beEN9-wJCtP9KcQt"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wtwNBf7mi6g?si=u0L7DjPWNOFL9yVc"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/lJCUC0mRkPo?si=Pdp4K4DCDxvJ8DNE"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer">
+
+            <div class="row">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <ul>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Career</a></li>
+                </ul>
+            </div>
+
+            <div class="row">
+                Copyright © 2024 MINDEASE - All rights reserved || Designed By: Kanwalpreet Singh & Jasmeen Singh
+            </div>
+        </div>
+    </footer>
+    </div>
 </body>
+
 </html>
