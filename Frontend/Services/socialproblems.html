@@ -31,43 +31,33 @@
   </head>
   <body>
     <section class="main">
-    <div class="navbar navbar-expand-lg">
-      <a href="index.html" id="logo" class="navbar-brand"
-        >Mind<span>Ease</span></a
-      >
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-        <!-- Bootstrap toggle icon -->
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="Psychological.html">Psychological</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Physical.html">Physical Health</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="mood.html">Mood Disorders</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="emotional.html">Emotional</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="academic.html">Academic</a>
-          </li>
-        </ul>
+      <div class="navBar">
+        <nav class="section__container nav__container">
+          <a href="/index.html">
+            <div class="nav__logo">Mind<span>Ease</span></div>
+          </a>
+          <button class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+            <!-- Add RemixIcon or any other icon for the hamburger menu -->
+          </button>
+          <ul class="nav__links" id="nav-links">
+            <li class="link"><a href="/index.html">Home</a></li>
+            <li class="link"><a href="mood.html">Mood</a></li>
+            <li class="link"><a href="emotional.html">Emotional</a></li>
+            <li class="link"><a href="Physical.html">Physical</a></li>
+            <li class="link"><a href="Psychological.html">Psychological</a></li>
+            <li class="link"><a href="socialproblems.html">Socialproblems</a></li>
+          </ul>
+        </nav>
       </div>
-    </div>
-
+      <script>
+        const toggleButton = document.getElementById("nav-toggle");
+        const navLinks = document.getElementById("nav-links");
+  
+        toggleButton.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+        });
+      </script>
     <div class="container">
       <div class="hero-section">
         <section id="intro">
@@ -76,8 +66,7 @@
             Social problems can significantly impact mental health in various
             ways, affecting individuals' emotional well-being, behavior, and
             overall quality of life. These problems often create stress,
-            anxiety, depression, and other mental health challenges, either
-            directly or indirectly
+            anxiety, depression.
           </p>
         </section>
       </div>
