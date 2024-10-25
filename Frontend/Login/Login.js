@@ -1,4 +1,4 @@
-const BACKEND_URL = 'https://backend-login-form.onrender.com'; // Use Render backend URL
+const BACKEND_URL = 'https://mindease-j25b.onrender.com'; // Use Render backend URL
 const submitButton = document.querySelector('.submit-button'); // Button 
 const otpVerifybutton = document.querySelector('.otp-verify-button'); // Button element
 
