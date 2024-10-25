@@ -1,6 +1,6 @@
-const BACKEND_URL = 'https://mindease-j25b.onrender.com'; // Use Render backend URL
-const submitButton = document.querySelector('.submit-button'); // Button 
-const otpVerifybutton = document.querySelector('.otp-verify-button'); // Button element
+const BACKEND_URL = 'https://mindease-j25b.onrender.com'; // Render backend URL
+const submitButton = document.querySelector('.submit-button');
+const otpVerifybutton = document.querySelector('.otp-verify-button'); 
 
 // Function to send OTP
 async function submitLogin() {
@@ -10,7 +10,6 @@ async function submitLogin() {
 
   if (name && email && password) {
     try {
-       // Disable the button and show a loader
        submitButton.disabled = true;
        submitButton.innerHTML = `<span class="loader"></span> Sending...`;
 
@@ -33,7 +32,6 @@ async function submitLogin() {
       alert('Server error. Please try again later.');
     }
     finally {
-      // Re-enable the button and restore text
       submitButton.disabled = false;
       submitButton.innerHTML = 'Submit';
   }
@@ -46,6 +44,8 @@ async function submitLogin() {
 async function verifyOTP() {
   const email = document.getElementById('email').value;
   const otp = document.getElementById('otp').value;
+  const name = document.getElementById('name').value;
+  const password = document.getElementById('password').value;
 
   try {
     otpVerifybutton.disabled = true;
@@ -60,7 +60,10 @@ async function verifyOTP() {
     const result = await response.json();
     if (result.success) {
       alert('OTP Verified! Redirecting to Home Page...');
-      window.location.href = "https://mindeaseapp.vercel.app/"; // Replace with your home page URL
+      window.location.href = "https://mindeaseapp.vercel.app/"; 
+      localStorage.setItem('name',name);
+      localStorage.setItem('email',email);
+      localStorage.setItem('password',password);
     } else {
       alert('Incorrect OTP. Please try again.');
     }
